@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+  
+  .form {
+    width: 60%; /* Reducimos el ancho del formulario */
+    max-width: 400px; /* Establecemos un ancho máximo */
+    margin-top: 20px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .error {
+    color: rgb(141, 19, 19);
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .country-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .country-list-item {
+    margin-bottom: 5px;
+  }
+  
+  

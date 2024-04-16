@@ -1,0 +1,12 @@
+.cards-container {
+  padding-left: 0; /* Elimina el padding izquierdo */
+  padding-right: 0; /* Elimina el padding derecho */
+  width: 100%; /* Hace que la anchura sea igual al ancho de la ventana */
+  margin: 0; /* Elimina el margen */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Define 5 columnas de igual tamaño */
+  grid-gap: 20px;
+  align-items: center; /* Centra verticalmente las tarjetas */
+  justify-content: center;  
+  background: rgb(218, 161, 237);
+}

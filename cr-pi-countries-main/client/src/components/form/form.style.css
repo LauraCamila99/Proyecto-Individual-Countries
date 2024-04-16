@@ -1,0 +1,76 @@
+/* Estilo específico para el formulario */
+.FormularioContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    margin-top: 4vh;
+    margin-bottom: 1vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  /* Estilos generales para botones y formularios */
+  .boton, .formulario {
+    padding: 2vh 4vw;
+    border-radius: 2vw;
+    font-size: 2vh;
+    margin: 1vh;
+  }
+  
+  .boton {
+    background-color: hsl(0, 0%, 100%);
+    border-color: #a834bd;
+    color: #580864;
+    border-style: solid;
+    cursor: pointer;
+  }
+  
+  /* Estilos específicos para el formulario */
+  .Formulario {
+    background-color: hwb(292 29% 24%);
+    border-color: hsl(300, 58%, 15%);
+    border-style: ridge;
+    overflow: hidden;
+    width: 70vw; /* Modifica el ancho del formulario */
+    margin-top: 4vh; /* Añade margen superior */
+  }
+  
+  .nombre, .barra, .selector {
+    text-align: left;
+  }
+  
+  .nombres {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    color: hsl(286, 72%, 24%);
+  }
+  
+  .barra, .selector {
+    border-style: solid;
+    border-radius: 1vw;
+    width: 30vw;
+    padding: 0.5vh;
+    margin: 2vh 0;
+  }
+  
+  .selector {
+    border-color: rgb(158, 30, 255);
+    width: 40vw;
+  }
+  
+  .crear {
+    border-radius: 2vw;
+    padding: 2vh 4vw;
+    background-color: hsl(0, 0%, 100%);
+    border-color: #5f34bd;
+    color: #580864;
+    border-style: solid;
+    font-size: 2vh;
+    margin-top: 4vh;
+  }
+  
+  .pais {
+    font-size: 3vh;
+  }
+

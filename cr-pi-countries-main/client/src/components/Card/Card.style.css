@@ -1,0 +1,56 @@
+ .card-container {
+  width: 150px;
+  height: 180px;
+  box-shadow: 0 10px 20px rgb(252, 194, 240);
+  justify-content: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction:column;
+  background: rgb(162, 67, 169);
+  align-items: center;
+  border: 1px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+  padding: 25px;
+  cursor: pointer;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+}
+.enlace {
+  text-decoration: none;
+}
+
+.card-container:hover {
+  transform: scale(1.08);
+}
+
+.nombre {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black;
+  font-size: 20px;
+  margin-bottom: 10px;
+  
+  
+
+}
+
+.imagen {
+  height: 80px;
+  width: 110px; /* Agregué "px" al valor de ancho */
+  display: inline;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Agregué sombra */
+  border: 1px solid rgba(0, 0, 0, 0.3); /* Agregué un borde */
+}
+
+.continente {
+  margin-top: 15px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white; /* Establece el color del texto como blanco */
+  text-shadow: 2px 2px 4px #6a0dad; /* Agrega sombra de color morado */
+}

@@ -5,7 +5,7 @@ const { Op } = require('sequelize');
 
 const getNameCountry = async (name) => {
     try {
-        //console.log("Nombre recibido como parámetro:", name); // Muestra el nombre recibido como parámetro en la consola
+        console.log("Nombre recibido como parámetro:", name); // Muestra el nombre recibido como parámetro en la consola
         if (!name) {
           return await Country.findAll({
              include: { model: Activity}
