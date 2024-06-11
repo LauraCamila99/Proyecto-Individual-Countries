@@ -19,7 +19,6 @@ const Create = () => {
   
 
   const [activityData, setActivityData] = useState({
-    id: '',
     name:'',
     difficulty:'',
     duration:'',
@@ -70,6 +69,7 @@ useEffect(() => {
 
 const handleSubmit = (event) => {
   event.preventDefault();
+  console.log("Paises seleccionados:", activityData);
   console.log(activityData);
 
   const idExist = activityData.id &&
@@ -87,6 +87,10 @@ const handleSubmit = (event) => {
     return;
   }
   
+  console.log("Actividad", activityData)
+
+
+
   const actionResult = dispatch(postActivity(activityData));
   
   
@@ -100,7 +104,7 @@ const handleSubmit = (event) => {
     dispatch(getActivities());
 
     setActivityData({
-      id: '',
+      
       name:'',
       difficulty:'',
       duration:'',
@@ -111,7 +115,7 @@ const handleSubmit = (event) => {
   }
 
 useEffect(() => {
-      if(activityData.id !== '' || activityData.name !== '' || activityData.difficulty !== '' || activityData.duration !== '' || activityData.season !== '' || activityData.countries !== '' ) {
+      if(activityData.name !== '' || activityData.difficulty !== '' || activityData.duration !== '' || activityData.season !== '' || activityData.countries !== '' ) {
           const activityValidated = validation(activityData);
           setErrors(activityValidated);
       }

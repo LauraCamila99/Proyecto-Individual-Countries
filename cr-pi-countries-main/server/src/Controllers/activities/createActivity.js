@@ -15,7 +15,7 @@ const createActivity = async (activityData) => {
     }
     
     try {
-        //console.log('Datos de actividad recibidos:', activityData);
+        console.log('Datos de actividad recibidos:', activityData);
         const activity = await Activity.create({
           id,
           name,

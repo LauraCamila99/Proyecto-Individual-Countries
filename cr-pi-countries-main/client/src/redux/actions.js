@@ -57,7 +57,7 @@ export const getByIdActivity = (id) => {
 };         
 
 export const getByName = (name) => {
-    const endpoint = `http://localhost:3001/countries/?name=${name}`;
+    const endpoint = `http://localhost:3001/countries/name?name=${name}`;
     return async (dispatch) => {
         try {
         const {data} = await axios.get(endpoint);
@@ -95,7 +95,7 @@ export const filterByContinent = (payload) => {
 };    
 
 export const filterByActivity = (payload) => {
-    console.log(payload)
+    
     return {
         type: FILTER_BY_ACTIVITY,
         payload,
@@ -121,17 +121,20 @@ export const orderByPopulation = (payload) => {
 
 
 export const postActivity = (payload) => {
-    return async function (dispatch){
-        try{
-        const data = await axios.post('http://localhost:3001/activities',payload);
-        return data
-
+    return async function (dispatch) {
+        try {
+            console.log('Payload enviado en la solicitud:', payload); // Mostrar el payload antes de enviar la solicitud
+            const data = await axios.post('http://localhost:3001/activities', payload);
+            console.log(data);
+            // Obtener la lista actualizada de países y actividades después de agregar una nueva actividad
+            dispatch(getCountries());
+            return data;
         } catch (error) {
-        console.log(error);
+            console.log(error);
         }
     }
- }
-
+}
+/* 
  export const deleteActivity = (id) => {
     console.log(id)
     const endpoint = `http://localhost:3001/activities/${id}`;
@@ -148,7 +151,7 @@ export const postActivity = (payload) => {
          } 
         };
         
-    };
+    }; */
  
     export const putActivity = (id, newData) => {
         const endpoint = `http://localhost:3001/activities/${id}`;

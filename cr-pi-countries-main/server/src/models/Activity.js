@@ -30,7 +30,7 @@ module.exports = (sequelize) => {
     },
     // Definimos el campo 'duration' como un número entero que puede ser nulo
     duration: {
-      type: DataTypes.INTEGER, // En horas
+      type: DataTypes.TIME, // En horas
       allowNull: true
     },
     // Definimos el campo 'season' como una enumeración con los valores de las temporadas indicadas, que no puede ser nula

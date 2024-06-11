@@ -1,21 +1,16 @@
 
 const { Country, Activity } = require("../../db.js"); 
+const getAllActivities= require("../../Controllers/activities/getAllActivities.js");
 
 const getActivities = async (req, res) => {
-    try {
-      const activitiesinDb=  await Activity.findAll();
-      if (activitiesinDb.length > 0) {
-        // Si hay países en la base de datos, los devolvemos
-        res.status(200).json(activitiesinDb);
-    } else {
-        // Si no hay países en la base de datos, puedes manejar esto como desees
-        res.status(404).json({ message: 'No se encontraron ACTIVIDADES en la base de datos' });
-    }
+  try {
+    const activityData = await getAllActivities();
+    res.status(200).json(activityData);
+  } catch (error) {
+    console.error('Error al obtener actividades:', error);
+    res.status(500).json({ error: 'Error interno del servidor' });
+  }
 
-    } catch (error) {
-      console.error(error);
-      res.status(500).json('Error en el servidor');
-    }
-  };
+};
 
 module.exports = getActivities;

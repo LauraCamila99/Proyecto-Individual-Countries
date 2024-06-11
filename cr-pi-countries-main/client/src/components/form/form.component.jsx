@@ -29,19 +29,6 @@ return(
     <div className="formulario">
       <form onSubmit={event=>handleSubmit(event)}>
        <div>
-        <label className="nombres" >Numero: </label>
-        <input className="barra"
-               name='id' 
-               value={activityData.id}
-               onChange={event=>handleChange(event)}
-        >
-        </input>
-          {errors.id && 
-            <p style={{ color: 'red'}}>
-            {errors.id}
-            </p>}
-       </div>
-       <div>
          <label className="nombres" >Nombre: </label>
          <input className="barra"
                 name='name' 
@@ -95,8 +82,8 @@ return(
          <select className='selector' name='countries' value={activityData.countries} onChange={event => handleSelect(event)}>
            <option value=''>Seleccionar...</option>
            {countries.map((country) =>(
-           <option value={country.name}>{country.name}</option>
-            ))}
+            <option key={country.id} value={country.id}>{country.name}</option>
+          ))}
          </select>
        </div>
          {activityData.countries.map(e =>
@@ -106,7 +93,7 @@ return(
          </div>)}
          <button className="crear"
            type='submit'
-           disabled={!activityData.id || !activityData.name || !activityData.difficulty || errors.id || errors.name || errors.difficulty || errors.duration || activityData.season == '' || activityData.countries.length == 0}
+           disabled={!activityData.name || !activityData.difficulty || errors.name || errors.difficulty || errors.duration || activityData.season == '' || activityData.countries.length == 0}
          >CREAR</button>
       </form> 
     </div>

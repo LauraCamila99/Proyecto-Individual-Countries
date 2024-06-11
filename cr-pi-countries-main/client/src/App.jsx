@@ -8,7 +8,7 @@ import Home from './pages/HomePage/Home.jsx';
 import Detail from "./pages/DetailPage/Detail.jsx";
 import Create from './pages/create/create.component.jsx'
 import Activities from './pages/activities/activities.component.jsx';
-
+import Edit from './pages/edit/edit.component.jsx';
 
 
 
@@ -22,6 +22,7 @@ function App() {
             <Route path="/form" element={<Create />} />
             <Route path='/detail/:id' element={<Detail/>}/>
             <Route path='/activities' element={<Activities/>}/>
+            <Route path='/activities/:id' element={<Edit/>}/>
             
           </Routes>
       </div>

@@ -1,0 +1,86 @@
+.contenedor_edit {
+    display: grid;
+    grid-template-columns: 1f;
+    width: auto;
+    height: auto;
+
+   
+}
+
+.boton_volver_act {
+    margin-top: 11rem;
+    margin-right: 10rem;
+    border-radius: 20%;
+    padding: 2rem;
+    border-radius: 2rem;
+    float:initial;
+    background-color: hsl(0, 0%, 100%);
+    border-style: solid;
+    border-color: #347abd;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    color:hsl(231, 85%, 21%);
+    cursor: pointer;
+}
+
+.boton_volver_act:hover {
+    background-color:#0b1730;
+    transform: scale(1.05);
+    color:white;
+}
+
+.tarjeta_form {
+    margin-top: 16rem;
+    margin-right: 10rem;
+}
+
+
+
+.datos_actividad {
+
+    display: inline-block;
+    background-color: hwb(209 48% 18%);
+    width: 65rem;
+    height: auto;
+    padding: 5rem 5rem 5rem 5rem;
+    border-radius: 10px;
+    border-color: hsl(231, 59%, 15%);
+    border-style: ridge;
+    font-size: 4rem;
+}
+
+.nombre_edit {
+    font-size: 5rem;
+    margin-bottom: 4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.input_edit {
+    margin: 1rem 1rem 1rem 1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4rem;
+    border-style: solid;
+    border-color: dodgerblue;
+    border-radius: 1rem;
+    width: 39rem;
+    
+}
+
+.boton_modificar {
+    border-radius: 20%;
+    padding: 2rem;
+    border-radius: 2rem;
+    float:initial;
+    background-color: hsl(0, 0%, 100%);
+    border-style: solid;
+    border-color: #347abd;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    margin-top: 4rem;
+    }
+    
+.boton_modificar:hover {
+        background-color:#0b1730;
+        transform: scale(1.05);
+        color:white;
+    }  

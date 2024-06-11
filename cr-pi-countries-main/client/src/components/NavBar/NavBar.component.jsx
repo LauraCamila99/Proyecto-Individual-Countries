@@ -11,6 +11,8 @@ function Navbar({handleChange, handleSubmit}) {
   const dispatch = useDispatch();
   const activities = useSelector((state) => state.allActivities)
   const [order, setOrder] = useState('')
+  const [selectedContinent, setSelectedContinent] = useState('');
+  const [selectedActivity, setSelectedActivity] = useState('');
   
 
   useEffect(() => {
@@ -20,13 +22,19 @@ function Navbar({handleChange, handleSubmit}) {
 
   function handleFilterContinent(event) {
     dispatch(filterByContinent(event.target.value))
+    setSelectedContinent(event.target.value);
+    setSelectedActivity('');
   };
 
   function handleFilterActivity(event) {
-    console.log(event)
     event.preventDefault()
+    console.log("Actividad seleccionada:", event.target.value);
+
     dispatch(filterByActivity(event.target.value))
-    console.log(dispatch)
+  
+    setSelectedActivity(event.target.value);
+    
+    setSelectedContinent('');
   }
   
 
@@ -49,7 +57,7 @@ function Navbar({handleChange, handleSubmit}) {
        <SearchBar onSearch={handleSubmit}/>
        </form>
        <Link to='/form'>
-        <button className='boton_crear' >Crear actividad</button>
+        <button className='boton_crear' >Crear  actividad</button>
        </Link>
        <Link to='/'>
         <button className='boton_salir' >Salir</button>

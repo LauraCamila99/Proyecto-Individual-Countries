@@ -6,24 +6,25 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 4rem;
+    justify-items: center;
     
 }
 
 .actividades {
     display: inline-block;
     height: auto;
-    border-color: #347abd;
+    border-color: #b434bd;
     border-radius: 3rem;
     padding-top: 5%;
     padding-bottom: 4rem;
-    width: 50rem;
-    margin: 0 auto;
+    width: 30rem;
+    margin: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 4rem;
     align-items: center;
     text-align: center;
     border-style: solid;
-    color: #0b1730;
+    color: #230b30;
     background-color:aliceblue
     
 }
@@ -34,9 +35,9 @@
     width: 5rem;
     height: 6rem;
     border-radius: 2rem;
-    background-color: hwb(244 4% 58%);
+    background-color: hwb(295 4% 58%);
     border-style: solid;
-    border-color: #347abd;
+    border-color: #ab34bd;
     text-align: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
@@ -59,10 +60,10 @@
     float:initial;
     background-color: hsl(0, 0%, 100%);
     border-style: solid;
-    border-color: #347abd;
+    border-color: #6f34bd;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
-    color:hsl(231, 85%, 21%);
+    color:hsl(283, 85%, 21%);
     cursor: pointer;
 }
 
@@ -70,20 +71,20 @@
 
 
 .boton_volver:hover {
-    background-color:#0b1730;
+    background-color:#752c82;
     transform: scale(1.05);
     color:white;
   }
 
 .parrafo_principal {
-    font-size: 4rem;
+    font-size: 1rem;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 2rem;
     margin-top: 3rem;
 }
 
 .parrafo_secundario {
-    font-size: 4rem;
+    font-size: 1rem;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 2rem;
 }
@@ -94,7 +95,7 @@
     margin-left: 44rem;
     width: 80rem;
     height: 10rem;
-    font-size: 4rem;
+    font-size: 1rem;
     padding-top: 8rem;
     padding-bottom: 4rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
